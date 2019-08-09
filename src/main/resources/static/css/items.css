@@ -1,0 +1,33 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(16, 214, 148);
+    margin:auto;
+    max-width:960px;
+  }
+  
+  .flex-container > div {
+    background-color: hsla(323, 85%, 48%, 0.5);
+    width: 220px;
+    height: 350px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+ .flex-img{
+    width: 220px;
+    height: 350px;
+ } 
+
+ .desc{
+     color:black;
+     font-family: monospace;
+     background-color: aliceblue;
+     font-size: 20px;
+ }
+ small{
+     color:green;
+     font-size: 12px;
+ }
