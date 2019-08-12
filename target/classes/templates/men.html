@@ -6,14 +6,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>              
-	<link rel="stylesheet" href="/css/items.css" />    
-	<link rel="stylesheet"  href="/css/productStyle.css" />    
-	<link rel="stylesheet"  href="/css/responsive.css" />    
-	<link rel="stylesheet" href="/css/slideshow.css" />
+	<link rel="stylesheet" href="./css/items.css" />    
+	<link rel="stylesheet"  href="./css/productStyle.css" />    
+	<link rel="stylesheet"  href="./css/responsive.css" />    
+	<link rel="stylesheet" href="./css/slideshow.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<script src="js/loadPage.js" ></script>
+	<script src="./js/loadPage.js" ></script>
 
 </head>
 <body>
@@ -180,6 +180,7 @@
 	            <h3 class="product-name" th:text="${item.productName}">Aelomart</h3>
 	            <h4 class="product-desc" th:text="${item.desc}">Solid Men Round Neck White, Black T-Shirt</h4>
 	            <p><b class="product-price" th:text="${item.price}">₹399</b> <i class="product-original-price" th:text="${item.originalPrice}"> ₹1,499 </i><small class="product-off" th:text="${item.off}">73% off</small></p>
+	            <button class="btn btn-info glyphicon glyphicon-shopping-cart add-to-cart" th:attr="id=@{${item.id}}"  > Add</button> 
 	         </div> 
         </div>
 	

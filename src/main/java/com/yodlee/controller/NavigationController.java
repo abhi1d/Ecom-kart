@@ -52,8 +52,9 @@ public class NavigationController {
             ObjectMapper mapper = new ObjectMapper();
             // read JSON file and map/convert to Java POJO :
             // data/sample-lite.json
+            //C:\Users\abhishek.sharma\Downloads\gs-serving-web-content-master\complete\src\main\resources\static\json\item.json
             Products products =
-              mapper.readValue(new File("data/item.json"), Products.class);
+              mapper.readValue(new File("src/main/resources/static/json/item.json"), Products.class);
             
             item_list = products.getItem();
 
@@ -86,4 +87,11 @@ public class NavigationController {
     {
     	return "navbar";
     }
+    
+    @GetMapping("/cart")
+    public String cart()
+    {
+    	return "cartSystem";
+    }
+
 }
