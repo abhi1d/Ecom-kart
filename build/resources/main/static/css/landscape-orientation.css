@@ -1,0 +1,32 @@
+/* Landscape */
+@media only screen  
+  and (max-device-width: 738px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      .product-wrapper{width:60%;height:70%;float:left;}
+      .product-caption{width:40%;height:100%;float:left;background-color:grey;}
+      .product-original-price{
+          padding:0px;
+      }
+
+  }
+
+
+@media only screen and (max-width: 568px)
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 1)
+{
+    /* For tablets: */
+    .col-land-1 {width: 8.33%;}
+    .col-land-2 {width: 16.66%;}
+    .col-land-3 {width: 25%;}
+    .col-land-4 {width: 33.33%;}
+    .col-land-5 {width: 41.66%;}
+    .col-land-6 {width: 50%;}
+    .col-land-7 {width: 58.33%;}
+    .col-land-8 {width: 66.66%;}
+    .col-land-9 {width: 75%;}
+    .col-land-10 {width: 83.33%;}
+    .col-land-11 {width: 91.66%;}
+    .col-land-12 {width: 100%;}
+  }
